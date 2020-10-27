@@ -127,7 +127,7 @@ li {
 .view {
     opacity: 0;
     transform: translateY(80px);
-    transition: 1.5s ease-in-out;
+    transition: 2s ease-in-out;
 
     &.isview {
         opacity: 1;

@@ -124,8 +124,8 @@ li {
   opacity: 0;
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
-  -webkit-transition: 1.5s ease-in-out;
-  transition: 1.5s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
 }
 
 .view.isview {
