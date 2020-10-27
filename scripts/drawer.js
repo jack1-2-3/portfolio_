@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.drawer').drawer();
     $('.drawer').on('drawer.opened', function() {
         if(window.ontouchstart) {
-            $('drawer').touchmove(function() {
+            $('.drawer').touchmove(function() {
                 $('.drawer').drawer('close');
             });
         } else {
