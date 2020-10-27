@@ -43,10 +43,6 @@ li {
           justify-content: center;
 }
 
-.header .header-wrap .link-nav .site-links .link-icon {
-  margin-right: 30px;
-}
-
 .header .header-wrap .link-nav .site-links .link-icon a img {
   width: 30px;
 }
@@ -155,11 +151,22 @@ li {
   .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
     margin-top: 60px;
   }
+  .margin-bottom-sm, .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title, .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title, .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
+    margin-bottom: 10px;
+  }
   .header {
     margin-top: 60px;
   }
   .header .header-wrap .header-title {
     font-size: 1.5rem;
+  }
+  .header .header-wrap .link-nav .site-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header .header-wrap .link-nav .site-links .link-icon {
+    padding-left: 10px;
   }
   .header .global-nav {
     display: none;
@@ -231,11 +238,17 @@ li {
   .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
     margin-top: 80px;
   }
+  .margin-bottom-sm, .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title, .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title, .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
+    margin-bottom: 15px;
+  }
   .drawer {
     display: none;
   }
   .header .header-wrap .header-title {
     font-size: 1.5rem;
+  }
+  .header .header-wrap .link-nav .site-links .link-icon {
+    margin-right: 30px;
   }
   .header .header-wrap .link-nav .site-links .link-icon a img {
     width: 45px;
