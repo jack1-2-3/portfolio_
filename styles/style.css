@@ -69,6 +69,10 @@ li {
   text-align: center;
 }
 
+.main .works-container .works-wrap .works-detail {
+  text-align: left;
+}
+
 .main .qiita-container .qiita-title {
   text-align: center;
 }
@@ -142,7 +146,7 @@ li {
   img {
     width: 80%;
   }
-  .margin-top-sm, .main .works-container .works-wrap, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
+  .margin-top-sm, .main .works-container .works-wrap, .main .works-container .works-wrap .works-item .works-detail, .main .qiita-container .qiita-list-wrap .qiita-list_jslearning, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
     margin-top: 10px;
   }
   .margin-top-md, .header .global-nav, .main .qiita-container .qiita-list-wrap .qiita-list_training, .main .qiita-container .qiita-list-wrap .qiita-list_minimum, .main .blog-wrap .blog-list_item {
@@ -164,6 +168,15 @@ li {
     color: black;
     font-size: 1.5rem;
   }
+  .main .works-container .works-wrap .works-item {
+    width: 100%;
+  }
+  .main .works-container .works-wrap .works-item .works-detail {
+    font-size: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .main .qiita-container .qiita-title {
     color: black;
     font-size: 1.5rem;
@@ -183,6 +196,9 @@ li {
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
     font-size: 1.3rem;
+  }
+  .main .qiita-container .qiita-link {
+    font-size: 1rem;
   }
   .main .blog-wrap .blog-title {
     color: black;
@@ -206,7 +222,7 @@ li {
   :root {
     font-size: 25px;
   }
-  .margin-top-sm, .main .works-container .works-wrap, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
+  .margin-top-sm, .main .works-container .works-wrap, .main .works-container .works-wrap .works-item .works-detail, .main .qiita-container .qiita-list-wrap .qiita-list_jslearning, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
     margin-top: 20px;
   }
   .margin-top-md, .header .global-nav, .main .qiita-container .qiita-list-wrap .qiita-list_training, .main .qiita-container .qiita-list-wrap .qiita-list_minimum, .main .blog-wrap .blog-list_item {
@@ -238,6 +254,12 @@ li {
   }
   .main .works-container .works-wrap .works-item a img {
     width: 100%;
+  }
+  .main .works-container .works-wrap .works-item .works-detail {
+    font-size: 1.3rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main .qiita-container .qiita-title {
     font-size: 1.5rem;
@@ -276,6 +298,9 @@ li {
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum a img {
     width: 100%;
+  }
+  .main .qiita-container .qiita-link {
+    font-size: 1rem;
   }
   .main .blog-wrap .blog-title {
     font-size: 1.5rem;
