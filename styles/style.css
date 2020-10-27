@@ -97,7 +97,6 @@ li {
 .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
   color: black;
   text-align: center;
-  white-space: nowrap;
 }
 
 .main .qiita-container .qiita-link {
@@ -121,10 +120,24 @@ li {
   text-align: center;
 }
 
+.view {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+}
+
+.view.isview {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
 @media screen and (max-width: 767px) {
   body {
     width: 90%;
-    margin: 5%;
+    margin: 0 5% 5% 5%;
   }
   img {
     width: 80%;
@@ -138,27 +151,14 @@ li {
   .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
     margin-top: 60px;
   }
-  .margin-bottom-lg {
-    margin-bottom: 60px;
+  .header {
+    margin-top: 60px;
   }
   .header .header-wrap .header-title {
     font-size: 1.5rem;
   }
-  .header .global-nav .global-menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header .global-nav .global-menu_item {
-    -ms-flex-preferred-size: calc(50% - 62px);
-        flex-basis: calc(50% - 62px);
-    text-align: center;
-    font-size: 1.2rem;
-    border: black 1px solid;
-    border-collapse: collapse;
-    padding: 15px 30px;
+  .header .global-nav {
+    display: none;
   }
   .main .works-container .works-title {
     color: black;
@@ -215,6 +215,9 @@ li {
   .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
     margin-top: 80px;
   }
+  .drawer {
+    display: none;
+  }
   .header .header-wrap .header-title {
     font-size: 1.5rem;
   }
@@ -251,7 +254,7 @@ li {
     width: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_jslearning a img {
     width: 100%;
@@ -260,7 +263,7 @@ li {
     width: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_training a img {
     width: 100%;
@@ -269,7 +272,7 @@ li {
     width: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum a img {
     width: 100%;

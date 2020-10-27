@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jack's portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
     <link rel="stylesheet" href="styles/css-reset/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body >
+    <div class="drawer drawer--left">
+        <div role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#">jack's portfolio</a></li>
+                    <li><a class="drawer-menu-item" href="#">Top</a></li>
+                    <li><a class="drawer-menu-item" href="#works">Works</a></li>
+                    <li><a class="drawer-menu-item" href="#qiita">Qiita</a></li>
+                    <li><a class="drawer-menu-item" href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <header class="header">
         <div class="header-wrap">
             <h1 class="header-title">jack's portfolio</h1>
@@ -38,7 +56,7 @@
         <nav class="global-nav">
             <ul class="global-menu">
                 <li class="global-menu_item">
-                    <a href="#">About</a>
+                    <a href="#">Top</a>
                 </li>
                 <li class="global-menu_item">
                     <a href="#works">Works</a>
@@ -54,7 +72,7 @@
     </header>
     <main class="main">
 
-        <div id="works" class="works-container">
+        <div id="works" class="works-container view">
             <h2 class="works-title">Works</h2>
             <div class="works-wrap">
                 <div class="works-item">
@@ -65,7 +83,7 @@
             </div>
         </div>
 
-        <div id="qiita" class="qiita-container">
+        <div id="qiita" class="qiita-container view">
 
             <h2 class="qiita-title">Qiita</h2>
 
@@ -101,7 +119,7 @@
             </p>
         </div>
 
-        <div id="blog" class="blog-wrap">
+        <div id="blog" class="blog-wrap view">
 
             <h2 class="blog-title">Blog</h2>
             <ul class="blog-list">
@@ -131,5 +149,13 @@
             Copyright &copy; 2020 All Rights Reserved.
         </p>
     </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="scripts/drawer.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

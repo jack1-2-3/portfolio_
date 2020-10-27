@@ -96,7 +96,6 @@ li {
                     .minimum-title {
                         color: $black;
                         text-align: center;
-                        white-space: nowrap;
                     }
                 }
             }
@@ -122,5 +121,16 @@ li {
 .footer {
     .copyright {
         text-align: center;
+    }
+}
+
+.view {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 1.5s ease-in-out;
+
+    &.isview {
+        opacity: 1;
+        transform: none;
     }
 }

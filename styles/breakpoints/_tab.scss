@@ -14,6 +14,10 @@
     margin-top: 80px;
 }
 
+.drawer {
+    display: none;
+}
+
 .header {
     .header-wrap {
         .header-title {
@@ -76,7 +80,7 @@
                     width: calc(100% / 3 - 10px);
 
                     .jslearning-title {
-                        font-size: 0.9rem;
+                        font-size: 0.7rem;
                     }
                     
                     a {
@@ -89,7 +93,7 @@
                     width: calc(100% / 3 - 10px);
 
                     .training-title {
-                        font-size: 0.9rem;
+                        font-size: 0.7rem;
                     }
                     
                     a {
@@ -102,7 +106,7 @@
                     width: calc(100% / 3 - 10px);
 
                     .minimum-title {
-                        font-size: 0.9rem;
+                        font-size: 0.7rem;
                     }
                     
                     a {
