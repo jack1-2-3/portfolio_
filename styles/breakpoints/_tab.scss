@@ -1,0 +1,140 @@
+:root {
+    font-size: 25px;
+}
+
+.margin-top-sm {
+    margin-top: 20px;
+}
+
+.margin-top-md {
+    margin-top: 50px;
+}
+
+.margin-top-lg {
+    margin-top: 80px;
+}
+
+.header {
+    .header-wrap {
+        .header-title {
+            font-size: 1.5rem;
+        }
+
+        .link-nav {
+            .site-links {
+                .link-icon {
+                    a {
+                        img {
+                            width: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .global-nav {
+        .global-menu {
+            justify-content: flex-end;
+
+            &_item {
+                margin-left: 30px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+.main {
+    .works-container  {
+        .works-title {
+            font-size: 1.5rem;
+        }
+
+        .works-wrap {
+            .works-item {
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .qiita-container {
+        .qiita-title {
+            font-size: 1.5rem;
+        }
+
+        .qiita-list-wrap {
+            .qiita-list {
+                &_jslearning {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 50px;
+                    width: calc(100% / 3 - 10px);
+
+                    .jslearning-title {
+                        font-size: 0.9rem;
+                    }
+                    
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                &_training {
+                    width: calc(100% / 3 - 10px);
+
+                    .training-title {
+                        font-size: 0.9rem;
+                    }
+                    
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                &_minimum {
+                    width: calc(100% / 3 - 10px);
+
+                    .minimum-title {
+                        font-size: 0.9rem;
+                    }
+                    
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+    }
+
+    .blog-wrap {
+        .blog-title {
+            font-size: 1.5rem;
+        }
+
+        .blog-list {
+            &_item {
+                width: calc(100% / 3 - 10px);
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &_item:first-child {
+                margin-top: 50px;
+            }
+        }
+    }
+}

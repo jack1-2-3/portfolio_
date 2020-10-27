@@ -1,0 +1,126 @@
+$black: black;
+$white: white;
+
+body {
+    background-color: $white;
+    width: 80%;
+    margin: 10% 10%;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .header-title {
+            align-self: center;
+        }
+
+        .link-nav {
+            align-self: center;
+
+            .site-links {
+                display: flex;
+                justify-content: center;
+
+                .link-icon {
+                    margin-right: 30px;
+                    a {
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+
+                .link-icon:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .global-nav {
+        .global-menu {
+            display: flex;
+        }
+    }
+}
+
+.main {
+    .works-container {
+        .works-title {
+            text-align: center;
+        }
+
+        .works-wrap {
+            text-align: center;
+        }
+    }
+
+    .qiita-container {
+        .qiita-title {
+            text-align: center;
+        }
+
+        .qiita-list-wrap {
+            .qiita-list {
+                display: flex;
+                justify-content: space-between;
+                
+                &_jslearning {
+                    .jslearning-title {
+                        color: $black;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+                }
+
+                &_training {
+                    .training-title {
+                        color: $black;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+                }
+
+                &_minimum {
+                    .minimum-title {
+                        color: $black;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .qiita-link {
+            text-align: center;
+        }
+    }
+
+    .blog-wrap {
+        .blog-title {
+            text-align: center;
+        }
+
+        .blog-list {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer {
+    .copyright {
+        text-align: center;
+    }
+}

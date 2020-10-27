@@ -1,1 +1,300 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  background-color: white;
+  width: 80%;
+  margin: 10% 10%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.header .header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-wrap .header-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .header-wrap .link-nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header .header-wrap .link-nav .site-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-wrap .link-nav .site-links .link-icon {
+  margin-right: 30px;
+}
+
+.header .header-wrap .link-nav .site-links .link-icon a img {
+  width: 30px;
+}
+
+.header .header-wrap .link-nav .site-links .link-icon:last-child {
+  margin-right: 0;
+}
+
+.header .global-nav .global-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .works-container .works-title {
+  text-align: center;
+}
+
+.main .works-container .works-wrap {
+  text-align: center;
+}
+
+.main .qiita-container .qiita-title {
+  text-align: center;
+}
+
+.main .qiita-container .qiita-list-wrap .qiita-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.main .qiita-container .qiita-link {
+  text-align: center;
+}
+
+.main .blog-wrap .blog-title {
+  text-align: center;
+}
+
+.main .blog-wrap .blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .copyright {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 90%;
+    margin: 5%;
+  }
+  img {
+    width: 80%;
+  }
+  .margin-top-sm, .main .works-container .works-wrap, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
+    margin-top: 10px;
+  }
+  .margin-top-md, .header .global-nav, .main .qiita-container .qiita-list-wrap .qiita-list_training, .main .qiita-container .qiita-list-wrap .qiita-list_minimum, .main .blog-wrap .blog-list_item {
+    margin-top: 50px;
+  }
+  .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
+    margin-top: 60px;
+  }
+  .margin-bottom-lg {
+    margin-bottom: 60px;
+  }
+  .header .header-wrap .header-title {
+    font-size: 1.5rem;
+  }
+  .header .global-nav .global-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .global-nav .global-menu_item {
+    -ms-flex-preferred-size: calc(50% - 62px);
+        flex-basis: calc(50% - 62px);
+    text-align: center;
+    font-size: 1.2rem;
+    border: black 1px solid;
+    border-collapse: collapse;
+    padding: 15px 30px;
+  }
+  .main .works-container .works-title {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .main .qiita-container .qiita-title {
+    color: black;
+    font-size: 1.5rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
+    font-size: 1.3rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
+    font-size: 1.3rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
+    font-size: 1.3rem;
+  }
+  .main .blog-wrap .blog-title {
+    color: black;
+    font-size: 1.3rem;
+  }
+  .main .blog-wrap .blog-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .blog-wrap .blog-list_item {
+    text-align: center;
+  }
+  .footer .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 25px;
+  }
+  .margin-top-sm, .main .works-container .works-wrap, .main .qiita-container .qiita-link, .main .blog-wrap .blog-list_item:first-child {
+    margin-top: 20px;
+  }
+  .margin-top-md, .header .global-nav, .main .qiita-container .qiita-list-wrap .qiita-list_training, .main .qiita-container .qiita-list-wrap .qiita-list_minimum, .main .blog-wrap .blog-list_item {
+    margin-top: 50px;
+  }
+  .margin-top-lg, .main .works-container .works-title, .main .qiita-container .qiita-title, .main .blog-wrap .blog-title, .footer .copyright {
+    margin-top: 80px;
+  }
+  .header .header-wrap .header-title {
+    font-size: 1.5rem;
+  }
+  .header .header-wrap .link-nav .site-links .link-icon a img {
+    width: 45px;
+  }
+  .header .global-nav .global-menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header .global-nav .global-menu_item {
+    margin-left: 30px;
+    font-size: 0.8rem;
+  }
+  .main .works-container .works-title {
+    font-size: 1.5rem;
+  }
+  .main .works-container .works-wrap .works-item a img {
+    width: 100%;
+  }
+  .main .qiita-container .qiita-title {
+    font-size: 1.5rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_jslearning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+    width: calc(100% / 3 - 10px);
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
+    font-size: 0.9rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_jslearning a img {
+    width: 100%;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_training {
+    width: calc(100% / 3 - 10px);
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
+    font-size: 0.9rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_training a img {
+    width: 100%;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_minimum {
+    width: calc(100% / 3 - 10px);
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
+    font-size: 0.9rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_minimum a img {
+    width: 100%;
+  }
+  .main .blog-wrap .blog-title {
+    font-size: 1.5rem;
+  }
+  .main .blog-wrap .blog-list_item {
+    width: calc(100% / 3 - 10px);
+  }
+  .main .blog-wrap .blog-list_item a img {
+    width: 100%;
+  }
+  .main .blog-wrap .blog-list_item:first-child {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1274px) {
+  body {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

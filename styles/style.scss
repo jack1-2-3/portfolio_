@@ -1,0 +1,15 @@
+@import 'breakpoints/_size.scss';
+@import 'mixin/_mixin.scss';
+@import 'breakpoints/_base.scss';
+
+@include mq() {
+    @import 'breakpoints/_sp.scss';
+};
+
+@include mq($breakpoint: tab) {
+    @import 'breakpoints/_tab.scss';
+};
+
+@include mq($breakpoint: pc) {
+    @import 'breakpoints/_pc.scss';
+};

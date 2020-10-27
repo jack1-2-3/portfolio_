@@ -1,0 +1,131 @@
+$black: black;
+
+body {
+    width: 90%;
+    margin: 5%;
+}
+
+img {
+    width: 80%;
+}
+
+.margin-top-sm {
+    margin-top: 10px;
+}
+
+.margin-top-md {
+    margin-top: 50px;
+}
+
+.margin-top-lg {
+    margin-top: 60px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 60px;
+}
+
+.header {
+    .header-wrap {
+        .header-title {
+            font-size: 1.5rem;
+        }
+    }
+
+    .global-nav {
+        @extend .margin-top-md;
+
+        .global-menu {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &_item {
+                flex-basis: calc(50% - 62px);
+                text-align: center;
+                font-size: 1.2rem;
+                border: $black 1px solid;
+                border-collapse: collapse;
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+
+.main {
+    .works-container {
+        .works-title {
+            color: $black;
+            font-size: 1.5rem;
+            @extend .margin-top-lg;
+        }
+
+        .works-wrap {
+            @extend .margin-top-sm;
+        }
+    }
+
+    .qiita-container {
+        .qiita-title {
+            color: $black;
+            font-size: 1.5rem;
+            @extend .margin-top-lg;
+        }
+
+        .qiita-list-wrap {
+            .qiita-list {
+                flex-direction: column;
+                text-align: center;
+                
+                &_jslearning {
+                    .jslearning-title {
+                        font-size: 1.3rem;
+                    }
+                }
+                &_training {
+                    @extend .margin-top-md;
+                    .training-title {
+                        font-size: 1.3rem;
+                    }
+                }
+                &_minimum {
+                    @extend .margin-top-md;
+                    .minimum-title {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .qiita-link {
+            @extend .margin-top-sm;
+        }
+    }
+
+    .blog-wrap {
+        .blog-title {
+            color: $black;
+            font-size: 1.3rem;
+            @extend .margin-top-lg;
+        }
+
+        .blog-list {
+            flex-direction: column;
+
+            &_item {
+                text-align: center;
+                @extend .margin-top-md;
+            }
+
+            &_item:first-child {
+                @extend .margin-top-sm;
+            }
+        }
+    }
+}
+
+.footer {
+    .copyright {
+        font-size: 0.8rem;
+        @extend .margin-top-lg;
+    }
+}

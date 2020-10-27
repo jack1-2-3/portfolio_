@@ -8,156 +8,103 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- ここからヘッダー -->
     <header class="header">
-        <!-- ヘッダータイトル -->
-        <h1 class="header_title">jack's portfolio</h1>
-
-        <!-- 外部サイトリンク -->
-        <nav class="link-nav">
-            <ul class="site-links">
-                <li class="link-icon">
-                    <a href="https://twitter.com/jack_ASDprogram">
-                        <img src="" alt="">
-                    </a>
-                </li>
-
-                <li class="link-icon">
-                    <a href="https://qiita.com/jack1-2-3">
-                        <img src="" alt="">
-                    </a>
-                </li>
-
-                <li class="link-icon">
-                    <a href="https://programming-jack.com/">
-                        <img src="" alt="">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-wrap">
+            <h1 class="header-title">jack's portfolio</h1>
+    
+            <nav class="link-nav">
+                <ul class="site-links">
+                    <li class="link-icon">
+                        <a href="https://twitter.com/jack_ASDprogram">
+                            <img src="images/twitter-icon.png" alt="">
+                        </a>
+                    </li>
+    
+                    <li class="link-icon">
+                        <a href="https://qiita.com/jack1-2-3">
+                            <img src="images/qiita-icon.png" alt="">
+                        </a>
+                    </li>
+    
+                    <li class="link-icon">
+                        <a href="https://programming-jack.com/">
+                            <img src="images/blog-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         
-        <!-- グローバルメニュー -->
         <nav class="global-nav">
             <ul class="global-menu">
                 <li class="global-menu_item">
-                    <a href="about.html">About</a>
+                    <a href="#">About</a>
                 </li>
                 <li class="global-menu_item">
-                    <a href="works.html">Works</a>
+                    <a href="#works">Works</a>
                 </li>
                 <li class="global-menu_item">
-                    <a href="qiita.html">Qiita</a>
+                    <a href="#qiita">Qiita</a>
                 </li>
                 <li class="global-menu_item">
-                    <a href="blog.html">Blog</a>
+                    <a href="#blog">Blog</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- ヘッダー終了 -->
     <main class="main">
 
-        <h2 class="works-title">Works</h2>
-        <!-- works -->
-        <div class="works-wrap">
-            <div class="work-item">
-                <a href="https://salon.haseblog.org/">
-                    <img src="images/hasebloHP.png" alt="">
-                </a>
+        <div id="works" class="works-container">
+            <h2 class="works-title">Works</h2>
+            <div class="works-wrap">
+                <div class="works-item">
+                    <a href="https://salon.haseblog.org/">
+                        <img src="images/hasebloHP.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- ここからqiita -->
-        <div class="qiita-wrap">
+        <div id="qiita" class="qiita-container">
 
             <h2 class="qiita-title">Qiita</h2>
-            <!-- ここからqiita list jslearning -->
-            <section class="qiita-list">
-                <h3 class="jslearning-title">【JS学習シリーズ】</h3>
 
-                <ul class="qiita-list_jslearning">
-
-                    <!-- ここから qiita item -->
-                    <li class="qiita-list_jslearning_item">
+            <div class="qiita-list-wrap">
+                <ul class="qiita-list">
+                    <li class="qiita-list_jslearning">
+                        <h3 class="jslearning-title">【JS学習シリーズ】</h3>
                         <a href="https://qiita.com/jack1-2-3/items/a9b3b41e09fd4a7aead1">
                             <img src="images/js-learning_js&ECMAscript.jpg" alt="">
                         </a>
                     </li>
-    
-                    <li class="qiita-list_jslearning_item">
-                        <a href="https://qiita.com/jack1-2-3/items/d2b6bcddaeaf78bdee42">
-                            <img src="images/js-learning_scope.jpg" alt="">
-                        </a>
-                    </li>
-    
-                    <li class="qiita-list_jslearning_item">
-                        <a href="https://qiita.com/jack1-2-3/items/583422b1340bd41e4b4f">
-                            <img src="images/js-learning_this.jpg" alt="">
-                        </a>
-                    </li>
-                    <!-- qiita item 終了 -->
-                </ul>
-            </section>
-            <!-- qiita list jslearning 終了 -->
-
-            <!-- ここからqiita list training  -->
-            <section class="qiita-list">
-                <h3 class="training-title">【実践シリーズ】</h3>
-
-                <ul class="qiita-list_training">
-                    <li class="qiita-list_training_item">
+                    
+                    <li class="qiita-list_training">
+                        <h3 class="training-title">【実践シリーズ】</h3>
                         <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
                             <img src="images/GAS-linebot_flexmessage.jpg" alt="">
                         </a>
                     </li>
-
-                    <li class="qiita-list_training_item">
-                        <a href="https://qiita.com/jack1-2-3/items/5e7c6afede31cf26a14b">
-                            <img src="images/fizzbuzz.jpg" alt="">
-                        </a>
-                    </li> 
-                </ul>
-            </section>
-            <!-- qiita list training 終了 -->
-
-            <!-- ここからqiita list minimum -->
-            <section class="qiita-list">
-                <h3 class="minimum-title">【超ミニマムシリーズ】</h3>
-
-                <ul class="qiita-list_minimum">
-                    <li class="qiita-list_minimum_item">
+                    
+                    <li class="qiita-list_minimum">
+                        <h3 class="minimum-title">【超ミニマムシリーズ】</h3>
                         <a href="https://qiita.com/jack1-2-3/items/541bc0c2c3106ac73d83">
                             <img src="images/minimum_language.jpg" alt="">
                         </a>
                     </li>
-
-                    <li class="qiita-list_minimum_item">
-                        <a href="https://qiita.com/jack1-2-3/items/9cec648500cd12f5077a">
-                            <img src="images/minimum_node-js.jpg" alt="">
-                        </a>
-                    </li>
-
-                    <li class="qiita-list_minimum_item">
-                        <a href="https://qiita.com/jack1-2-3/items/da420b186f03032b928f">
-                            <img src="images/minimum_window-object.jpg" alt="">
-                        </a>
-                    </li>
                 </ul>
-            </section>
-            <!-- qiita list minimum 終了 -->
+            </div>
 
-            <!-- ここから他のqiitaへのリンク -->
-            <p class="qiita-link"><a href="https://qiita.com/jack1-2-3">他の記事はこちらから</a></p>
+            <p class="qiita-link">
+                <a href="https://qiita.com/jack1-2-3">
+                    他の記事はこちらから
+                </a>
+            </p>
         </div>
-        <!-- qiita 終了 -->
 
-        <!-- ここからblog -->
-        <div class="blog-wrap">
+        <div id="blog" class="blog-wrap">
 
             <h2 class="blog-title">Blog</h2>
-            <!-- ここからblog list -->
             <ul class="blog-list">
-                <!-- ここからblog list item -->
                 <li class="blog-list_item">
                     <a href="https://programming-jack.com/css-shousaido">
                         <img src="images/blog_shosaido.jpg" alt="">
@@ -175,11 +122,8 @@
                         <img src="images/blog_display&visibility.jpg" alt="">
                     </a>
                 </li>
-                <!-- blog list item 終了 -->
             </ul>
-            <!-- blog list 終了 -->
         </div>
-        <!-- blog 終了 -->
     </main>
 
     <footer class="footer">
