@@ -244,6 +244,26 @@ li {
   .drawer {
     display: none;
   }
+  #page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+  }
+  #page-top a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  #page-top a:hover {
+    background: #999;
+    text-decoration: none;
+  }
   .header .header-wrap .header-title {
     font-size: 1.5rem;
   }
