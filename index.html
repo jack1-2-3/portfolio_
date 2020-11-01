@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
     <link rel="stylesheet" href="styles/css-reset/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <div class="drawer drawer--left">
@@ -91,25 +92,75 @@
 
             <div class="qiita-list-wrap">
                 <ul class="qiita-list">
-                    <li class="qiita-list_jslearning">
+                    <li class="swiper-container qiita-list_jslearning">
                         <h3 class="jslearning-title">【JS学習シリーズ】</h3>
-                        <a href="https://qiita.com/jack1-2-3/items/a9b3b41e09fd4a7aead1">
-                            <img src="images/js-learning_js&ECMAscript.jpg">
-                        </a>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/a9b3b41e09fd4a7aead1">
+                                    <img src="images/js-learning_js&ECMAscript.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/jslearning_scope.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/jslearning_this.jpg">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </li>
-                    
-                    <li class="qiita-list_training">
+
+                    <li class="swiper-container qiita-list_training">
                         <h3 class="training-title">【実践シリーズ】</h3>
-                        <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
-                            <img src="images/GAS-linebot_flexmessage.jpg">
-                        </a>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/GAS-linebot_flexmessage.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/fizzbuzz.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </li>
-                    
-                    <li class="qiita-list_minimum">
+
+                    <li class="swiper-container qiita-list_minimum">
                         <h3 class="minimum-title">【超ミニマムシリーズ】</h3>
-                        <a href="https://qiita.com/jack1-2-3/items/541bc0c2c3106ac73d83">
-                            <img src="images/minimum_language.jpg">
-                        </a>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/541bc0c2c3106ac73d83">
+                                    <img src="images/minimum_language.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/minimum_nodejs.jpg">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://qiita.com/jack1-2-3/items/809dd26f06f0a2288ede">
+                                    <img src="images/minimum_window-object.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </li>
                 </ul>
             </div>
@@ -156,9 +207,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/drawer.js"></script>
     <script src="scripts/pagetop.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/heroslider.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

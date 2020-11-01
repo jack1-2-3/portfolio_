@@ -195,11 +195,20 @@ li {
             flex-direction: column;
     text-align: center;
   }
+  .main .qiita-container .qiita-list-wrap .qiita-list_jslearning {
+    width: 100%;
+  }
   .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
     font-size: 1.3rem;
   }
+  .main .qiita-container .qiita-list-wrap .qiita-list_training {
+    width: 100%;
+  }
   .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
     font-size: 1.3rem;
+  }
+  .main .qiita-container .qiita-list-wrap .qiita-list_minimum {
+    width: 100%;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
     font-size: 1.3rem;
@@ -297,16 +306,13 @@ li {
   .main .qiita-container .qiita-title {
     font-size: 1.5rem;
   }
+  .main .qiita-container .qiita-list-wrap .qiita-list {
+    width: 100%;
+  }
   .main .qiita-container .qiita-list-wrap .qiita-list_jslearning {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 50px;
-    width: calc(100% / 3 - 10px);
+    -ms-flex-preferred-size: calc(100% / 3 - 10px);
+        flex-basis: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_jslearning .jslearning-title {
     font-size: 0.7rem;
@@ -315,7 +321,8 @@ li {
     width: 100%;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_training {
-    width: calc(100% / 3 - 10px);
+    -ms-flex-preferred-size: calc(100% / 3 - 10px);
+        flex-basis: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_training .training-title {
     font-size: 0.7rem;
@@ -324,7 +331,8 @@ li {
     width: 100%;
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum {
-    width: calc(100% / 3 - 10px);
+    -ms-flex-preferred-size: calc(100% / 3 - 10px);
+        flex-basis: calc(100% / 3 - 10px);
   }
   .main .qiita-container .qiita-list-wrap .qiita-list_minimum .minimum-title {
     font-size: 0.7rem;

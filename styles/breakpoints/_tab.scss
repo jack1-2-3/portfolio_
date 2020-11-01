@@ -108,24 +108,24 @@
 
         .qiita-list-wrap {
             .qiita-list {
+                width: 100%;
+
                 &_jslearning {
-                    display: flex;
-                    flex-direction: column;
                     margin-top: 50px;
-                    width: calc(100% / 3 - 10px);
+                    flex-basis: calc(100% / 3 - 10px);
 
                     .jslearning-title {
                         font-size: 0.7rem;
                     }
-                    
-                    a {
-                        img {
-                            width: 100%;
+                        
+                        a {
+                            img {
+                                width: 100%;
+                            }
                         }
-                    }
                 }
                 &_training {
-                    width: calc(100% / 3 - 10px);
+                    flex-basis: calc(100% / 3 - 10px);
 
                     .training-title {
                         font-size: 0.7rem;
@@ -138,7 +138,7 @@
                     }
                 }
                 &_minimum {
-                    width: calc(100% / 3 - 10px);
+                    flex-basis: calc(100% / 3 - 10px);
 
                     .minimum-title {
                         font-size: 0.7rem;
